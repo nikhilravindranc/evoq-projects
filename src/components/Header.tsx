@@ -90,24 +90,16 @@ const Header = () => {
             <Link href="/why-evoq" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2">
               Why EVOQ?
             </Link>
-
-            {/* Contact Us */}
-            <Link href="/contact" className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2">
-              Contact Us
-            </Link>
           </nav>
 
           {/* ── Right CTAs ── */}
           <div className="hidden md:flex items-center gap-3">
-            <Button variant="ghost" size="sm" className="text-gray-600 hover:text-[#0F0F1A] font-medium">
-              Log in
-            </Button>
             <Button
               size="sm"
               className="font-semibold text-white rounded-full pl-5 pr-1.5 py-1.5 h-auto flex items-center gap-2"
               style={{ background: "#1B4FD8" }}
             >
-              Get Started
+              Contact Us
               <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.2)" }}>
                 <ArrowRight className="w-4 h-4" />
               </span>
@@ -139,11 +131,8 @@ const Header = () => {
             <Link href="/why-evoq" className="block text-sm font-medium text-gray-700 px-2 py-2" onClick={() => setMobileOpen(false)}>
               Why EVOQ?
             </Link>
-            <Link href="/contact" className="block text-sm font-medium text-gray-700 px-2 py-2" onClick={() => setMobileOpen(false)}>
+            <Button size="sm" className="w-full font-semibold text-white" style={{ background: "#1B4FD8" }}>
               Contact Us
-            </Link>
-            <Button size="sm" className="w-full font-semibold text-white" style={{ background: "#0F0F1A" }}>
-              Get Started
             </Button>
           </div>
         </div>
