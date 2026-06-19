@@ -494,7 +494,7 @@ export default function EvoqProjectsPage() {
               <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.15] mb-5">
                 Coordinate Work Beyond Traditional Projects
               </h2>
-              <p className="text-gray-500 text-base leading-relaxed mb-10">
+              <p className="text-gray-500 text-lg leading-relaxed mb-10">
                 EVOQ Projects supports operational workflows alongside project execution, helping teams coordinate approvals, recurring processes, resource planning, reporting, documentation, and cross-functional activities within a structured operational environment.
               </p>
 
@@ -764,7 +764,7 @@ export default function EvoqProjectsPage() {
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-[1.2] mb-4">
                   Bring Planning, Execution, and<br />Team Coordination Together
                 </h2>
-                <p className="text-base leading-relaxed text-gray-900 max-w-2xl mx-auto">
+                <p className="text-lg leading-relaxed text-gray-900 max-w-2xl mx-auto">
                   Discover how EVOQ Projects helps organizations improve visibility, coordinate workflows, manage execution, and support teams operating across projects, operations, and business functions.
                 </p>
               </div>
