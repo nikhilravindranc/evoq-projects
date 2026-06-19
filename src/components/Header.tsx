@@ -97,11 +97,11 @@ const Header = () => {
             <Button
               size="sm"
               className="font-semibold text-white rounded-full pl-5 pr-1.5 py-1.5 h-auto flex items-center gap-2"
-              style={{ background: "#1B4FD8" }}
+              style={{ background: "#7C3AED" }}
             >
               Contact Us
               <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.2)" }}>
-                <ArrowRight className="w-4 h-4" />
+                <ArrowRight className="w-4 h-4" style={{ color: "#C4B5FD" }} />
               </span>
             </Button>
           </div>
@@ -131,7 +131,7 @@ const Header = () => {
             <Link href="/why-evoq" className="block text-sm font-medium text-gray-700 px-2 py-2" onClick={() => setMobileOpen(false)}>
               Why EVOQ?
             </Link>
-            <Button size="sm" className="w-full font-semibold text-white" style={{ background: "#1B4FD8" }}>
+            <Button size="sm" className="w-full font-semibold text-white" style={{ background: "#7C3AED" }}>
               Contact Us
             </Button>
           </div>
