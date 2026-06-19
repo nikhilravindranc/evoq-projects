@@ -190,8 +190,8 @@ export default function EvoqProjectsPage() {
               style={{ width: 118, height: 155, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 90, left: "23%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80"
-              alt="" className="object-cover rounded-3xl border-4 border-white shadow-xl"
+            <img src="/images/hero/professional-woman-laptop.jpg"
+              alt="Professional woman with laptop" className="object-cover rounded-3xl border-4 border-white shadow-xl"
               style={{ width: 158, height: 208, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 128, left: "50%", transform: "translateX(-50%)", zIndex: 2 }}>
