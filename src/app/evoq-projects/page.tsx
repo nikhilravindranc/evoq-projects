@@ -288,15 +288,15 @@ export default function EvoqProjectsPage() {
 
         {/* Centered headline + CTA */}
         <div className="text-center px-4 pb-16 pt-2 relative z-10">
-          <p className="text-[11px] font-bold uppercase tracking-widest mb-4" style={{ color: "#7C3AED" }}>
+          <p className="eyebrow mb-4" style={{ color: "#7C3AED" }}>
             Work Management &amp; Operations Platform
           </p>
-          <h1 className="font-extrabold text-gray-900 leading-[1.1] tracking-tight"
-            style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)" }}>
+          <h1 className="h1 text-gray-900"
+            style={{ fontFamily: '"Figtree", sans-serif', fontSize: "48px" }}>
             Plan, Coordinate, and Execute<br />
             Work Across Teams
           </h1>
-          <p className="mt-4 text-gray-500 max-w-2xl mx-auto leading-relaxed" style={{ fontSize: "1.05rem" }}>
+          <p className="body-large mt-4 text-gray-500 max-w-2xl mx-auto" style={{ fontFamily: '"DM Sans", sans-serif' }}>
             EVOQ Projects helps organizations manage projects, workflows, approvals, timelines, and operational execution with the flexibility to support Agile delivery, structured planning, and cross-functional coordination across industries.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
@@ -319,7 +319,7 @@ export default function EvoqProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="space-y-7">
-              <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.15]">
+              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                 The Smarter Way to Keep<br />
                 Every Team on Track
               </h2>
@@ -420,7 +420,7 @@ export default function EvoqProjectsPage() {
                       >
                         {ind.executionStyle}
                       </p>
-                      <h3 className="text-2xl font-extrabold mb-3 leading-snug" style={{ color: "rgba(0,0,0,0.82)" }}>
+                      <h3 className="h3 mb-3" style={{ color: "rgba(0,0,0,0.82)", fontFamily: '"Figtree", sans-serif', fontSize: "24px" }}>
                         {ind.name}
                       </h3>
                       <p

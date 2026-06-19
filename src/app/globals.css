@@ -41,5 +41,52 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-dm-sans, system-ui, sans-serif);
+}
+
+/* ── Typography System ── */
+.h1 {
+  font-family: var(--font-figtree, system-ui, sans-serif);
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.h2 {
+  font-family: var(--font-figtree, system-ui, sans-serif);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.26;
+  letter-spacing: -0.01em;
+}
+
+.h3 {
+  font-family: var(--font-figtree, system-ui, sans-serif);
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 0;
+}
+
+.body-large {
+  font-family: var(--font-dm-sans, system-ui, sans-serif);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.56;
+}
+
+.body {
+  font-family: var(--font-dm-sans, system-ui, sans-serif);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.eyebrow {
+  font-family: var(--font-figtree, system-ui, sans-serif);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }

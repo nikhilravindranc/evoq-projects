@@ -24,10 +24,10 @@ export default function EvoqProjectsFeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row items-center gap-16">
             <div className="lg:w-[48%] flex-shrink-0">
-              <h1 className="text-5xl md:text-6xl font-extrabold text-gray-900 leading-[1.08] tracking-tight mb-7">
+              <h1 className="h1 text-gray-900 mb-7" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "48px" }}>
                 Built to Support Operational Execution Across Teams
               </h1>
-              <p className="text-lg text-gray-500 leading-relaxed max-w-md">
+              <p className="body text-gray-500" style={{ fontFamily: '"DM Sans", sans-serif' }}>
                 EVOQ Projects helps organizations plan work, coordinate workflows, manage execution, track progress, and maintain operational visibility across teams and ongoing activities.
               </p>
             </div>
@@ -72,7 +72,7 @@ export default function EvoqProjectsFeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 mb-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.12]">
+              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                 Plan Work with More Structure and Clarity
               </h2>
             </div>
@@ -117,7 +117,7 @@ export default function EvoqProjectsFeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 mb-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.12]">
+              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                 Coordinate Execution Across Teams
               </h2>
             </div>
@@ -162,7 +162,7 @@ export default function EvoqProjectsFeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 mb-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.12]">
+              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                 Track Operational Progress with Better Visibility
               </h2>
             </div>
@@ -207,7 +207,7 @@ export default function EvoqProjectsFeaturesPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col lg:flex-row gap-10 mb-12">
             <div className="lg:w-1/2">
-              <h2 className="text-4xl font-extrabold text-gray-900 leading-[1.12]">
+              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                 Keep Teams Connected Throughout Execution
               </h2>
             </div>
@@ -257,10 +257,10 @@ export default function EvoqProjectsFeaturesPage() {
             <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
             <div className="relative z-10 flex flex-col items-center text-center gap-8 px-12 py-16">
               <div className="max-w-4xl w-full">
-                <h2 className="text-4xl font-extrabold text-white leading-[1.15] mb-5">
+                <h2 className="h2 text-white mb-5" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                   Bring More Structure and Visibility to <span style={{ color: "#A78BFA" }}>Operational Execution</span>
                 </h2>
-                <p className="text-white/70 text-lg leading-relaxed">
+                <p className="body-large text-white/70" style={{ fontFamily: '"DM Sans", sans-serif' }}>
                   Discover how EVOQ Projects helps teams coordinate workflows, improve accountability, manage operational activities, and maintain visibility across ongoing work.
                 </p>
               </div>

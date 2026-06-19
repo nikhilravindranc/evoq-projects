@@ -208,8 +208,8 @@ export default function EvoqProjectsPricingPage() {
 
               {/* LEFT — heading + FAQ */}
               <div className="lg:w-[44%] p-10 lg:p-12 border-r border-gray-100">
-                <p className="text-[10px] font-extrabold uppercase tracking-widest mb-4" style={{ color: "#7C3AED" }}>Simple, Transparent Pricing</p>
-                <h1 className="text-4xl font-extrabold text-gray-900 leading-[1.1] mb-10">
+                <p className="eyebrow mb-4" style={{ color: "#7C3AED", fontFamily: '"Figtree", sans-serif' }}>Simple, Transparent Pricing</p>
+                <h1 className="h1 text-gray-900 mb-10" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "48px" }}>
                   Powerful tools.<br />Honest pricing.
                 </h1>
                 <div className="divide-y divide-gray-100">
@@ -324,11 +324,11 @@ export default function EvoqProjectsPricingPage() {
             <div className="absolute inset-0 opacity-[0.05]" style={{ backgroundImage: "radial-gradient(circle, white 1px, transparent 1px)", backgroundSize: "36px 36px" }} />
             <div className="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-8 px-12 py-14">
               <div className="lg:max-w-[60%]">
-                <h2 className="text-3xl font-extrabold text-white leading-[1.2] mb-3">
+                <h2 className="h2 text-white mb-3" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
                   Ready to Get Started?{" "}
                   <span style={{ color: "#A78BFA" }}>Your first 14 days are free.</span>
                 </h2>
-                <p className="text-white/70 leading-relaxed">Join thousands of teams already delivering better projects with EVOQ Projects.</p>
+                <p className="body text-white/70" style={{ fontFamily: '"DM Sans", sans-serif' }}>Join thousands of teams already delivering better projects with EVOQ Projects.</p>
               </div>
               <Button size="lg" onClick={() => setShowDemo(true)}
                 className="font-bold text-base px-10 py-5 rounded-2xl text-white transition-all hover:scale-[1.02] flex-shrink-0 flex items-center gap-2"
