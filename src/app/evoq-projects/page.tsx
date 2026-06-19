@@ -584,35 +584,26 @@ export default function EvoqProjectsPage() {
             className="relative rounded-3xl overflow-hidden"
             style={{ background: "linear-gradient(135deg, #2A0E52 0%, #4C1D95 55%, #5D1E99 100%)" }}
           >
-            {/* Radiating diagonal bars — bottom-right burst */}
+            {/* Radiating diagonal bars — pivoted at the card's bottom-right corner, fanning up-left */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <div
-                className="absolute"
-                style={{
-                  right: "-12%",
-                  bottom: "-30%",
-                  width: 560,
-                  height: 560,
-                }}
-              >
-                {Array.from({ length: 16 }).map((_, i) => (
-                  <div
-                    key={i}
-                    className="absolute"
-                    style={{
-                      left: "50%",
-                      top: "50%",
-                      width: 16,
-                      height: 130,
-                      background: i % 3 === 0 ? "#A78BFA" : i % 3 === 1 ? "#7C3AED" : "#C4B5FD",
-                      opacity: 0.55,
-                      borderRadius: 3,
-                      transformOrigin: "center 230px",
-                      transform: `translate(-50%, -100%) rotate(${i * (360 / 16)}deg)`,
-                    }}
-                  />
-                ))}
-              </div>
+              {Array.from({ length: 9 }).map((_, i) => (
+                <div
+                  key={i}
+                  className="absolute"
+                  style={{
+                    right: 0,
+                    bottom: 0,
+                    width: 10,
+                    height: 100,
+                    background: i % 3 === 0 ? "#A78BFA" : i % 3 === 1 ? "#7C3AED" : "#C4B5FD",
+                    opacity: 0.14,
+                    borderRadius: 3,
+                    transformOrigin: "bottom right",
+                    // Narrow quarter-arc anchored at the corner so bars stay clear of the integration tiles
+                    transform: `rotate(${-12 - i * 8}deg)`,
+                  }}
+                />
+              ))}
             </div>
             <div className="absolute inset-0 opacity-[0.08] pointer-events-none" style={{
               backgroundImage: "radial-gradient(circle, #ffffff 1.5px, transparent 1.5px)",
