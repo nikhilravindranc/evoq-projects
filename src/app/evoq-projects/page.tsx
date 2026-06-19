@@ -359,7 +359,7 @@ export default function EvoqProjectsPage() {
       </section>
 
       {/* Flexible Execution Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <section className="py-20 px-4 sm:px-6 lg:px-8" style={{ background: "#F5F3FF" }}>
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-[11px] font-bold uppercase tracking-widest mb-3" style={{ color: "#7C3AED" }}>
