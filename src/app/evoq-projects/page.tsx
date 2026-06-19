@@ -582,7 +582,7 @@ export default function EvoqProjectsPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div
             className="relative rounded-3xl overflow-hidden"
-            style={{ background: "linear-gradient(135deg, #2A0E52 0%, #4C1D95 55%, #5D1E99 100%)" }}
+            style={{ background: "linear-gradient(135deg, #5D1E99 0%, #7C3AED 100%)" }}
           >
             {/* Radiating diagonal bars — pivoted at the card's bottom-right corner, fanning up-left */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
