@@ -195,8 +195,8 @@ export default function EvoqProjectsPage() {
               style={{ width: 158, height: 208, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 128, left: "50%", transform: "translateX(-50%)", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=380&q=80"
-              alt="" className="object-cover rounded-3xl border-4 border-white shadow-2xl"
+            <img src="/images/hero/happy-engineer.jpg"
+              alt="Happy engineer" className="object-cover rounded-3xl border-4 border-white shadow-2xl"
               style={{ width: 188, height: 228, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 90, right: "23%", zIndex: 2 }}>
@@ -210,8 +210,8 @@ export default function EvoqProjectsPage() {
               style={{ width: 138, height: 175, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 265, left: "13%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=260&q=80"
-              alt="" className="object-cover rounded-3xl border-4 border-white shadow-lg"
+            <img src="/images/hero/professional-woman-laptop.jpg"
+              alt="Professional woman with laptop" className="object-cover rounded-3xl border-4 border-white shadow-lg"
               style={{ width: 126, height: 156, objectPosition: "top" }} />
           </div>
           <div className="absolute" style={{ top: 260, right: "13%", zIndex: 2 }}>
