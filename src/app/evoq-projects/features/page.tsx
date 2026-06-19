@@ -38,7 +38,7 @@ export default function EvoqProjectsFeaturesPage() {
                   <LayoutGrid className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid rgba(167,139,250,0.15)" }}>
-                  <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop&crop=faces" alt="" className="w-full h-full object-cover" />
+                  <img src="/images/hero/professional-woman-laptop.jpg" alt="Professional woman with laptop" className="w-full h-full object-cover" />
                 </div>
                 <div className="aspect-square rounded-2xl flex items-center justify-center shadow-sm" style={{ background: "#F5F3FF", border: "1px solid rgba(167,139,250,0.15)" }}>
                   <CheckCircle2 className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
