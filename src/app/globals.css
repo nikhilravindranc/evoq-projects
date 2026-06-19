@@ -8,15 +8,34 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  /* ── EVOQ Projects palette ── */
+  --color-evoq-projects-deep-purple: #5D1E99;
+  --color-evoq-projects-primary:     #7C3AED;
+  --color-evoq-projects-magenta:     #8B5CF6;
+  --color-evoq-projects-lavender:    #A78BFA;
+  --color-evoq-projects-cyan:        #C4B5FD;
+  --color-evoq-projects-soft-bg:     #F5F3FF;
+  --color-evoq-projects-tint:        #DDD6FE;
+
+  /* ── Other products ── */
+  --color-evoq-crm-royal-blue: #1B4FD8;
+
+  /* ── Custom animation ── */
+  --animate-fade-in: fade-in 0.4s ease-out forwards;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@keyframes fade-in {
+  0%   { opacity: 0; transform: translateY(8px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Brand heading gradient — Deep (#5D1E99) → Mid (#7C3AED) — for maximum authority */
+.text-heading-gradient {
+  background: linear-gradient(135deg, #5D1E99 0%, #7C3AED 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 body {
