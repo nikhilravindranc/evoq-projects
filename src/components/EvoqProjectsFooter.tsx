@@ -55,7 +55,7 @@ const socialLinks = [
 
 const EvoqProjectsFooter = () => {
   return (
-    <footer style={{ background: "#F5F5F7" }}>
+    <footer style={{ background: "#5D1E99" }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-0">
 
         {/* ── Main grid ── */}
@@ -63,10 +63,10 @@ const EvoqProjectsFooter = () => {
 
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <span className="text-2xl font-black tracking-tight text-[#0F0F1A] block mb-3" style={{ letterSpacing: "-0.03em" }}>
+            <span className="text-2xl font-black tracking-tight text-white block mb-3" style={{ letterSpacing: "-0.03em" }}>
               <span style={{ fontWeight: 900 }}>≡</span>VOQ
             </span>
-            <p className="text-sm text-gray-500 leading-relaxed">
+            <p className="text-sm leading-relaxed" style={{ color: "rgba(255,255,255,0.65)" }}>
               One Suite.<br />Endless Potential.
             </p>
           </div>
@@ -74,11 +74,11 @@ const EvoqProjectsFooter = () => {
           {/* Link columns */}
           {Object.entries(footerLinks).map(([group, links]) => (
             <div key={group}>
-              <h4 className="text-[11px] font-bold uppercase tracking-widest text-gray-400 mb-4">{group}</h4>
+              <h4 className="text-[11px] font-bold uppercase tracking-widest mb-4" style={{ color: "rgba(255,255,255,0.5)" }}>{group}</h4>
               <ul className="space-y-3">
                 {links.map((link) => (
                   <li key={link.label}>
-                    <Link href={link.href} className="text-sm text-gray-600 hover:text-[#0F0F1A] transition-colors">
+                    <Link href={link.href} className="text-sm transition-colors hover:text-white" style={{ color: "rgba(255,255,255,0.75)" }}>
                       {link.label}
                     </Link>
                   </li>
@@ -89,8 +89,8 @@ const EvoqProjectsFooter = () => {
         </div>
 
         {/* ── Bottom bar ── */}
-        <div className="mt-14 py-6 border-t border-gray-200 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-gray-400">
+        <div className="mt-14 py-6 flex flex-col sm:flex-row items-center justify-between gap-4" style={{ borderTop: "1px solid rgba(255,255,255,0.15)" }}>
+          <p className="text-sm" style={{ color: "rgba(255,255,255,0.5)" }}>
             © {new Date().getFullYear()} Social DNA Labs. All rights reserved.
           </p>
           <div className="flex items-center gap-2">
@@ -99,10 +99,10 @@ const EvoqProjectsFooter = () => {
                 key={label}
                 href={href}
                 aria-label={label}
-                className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors hover:bg-gray-200"
-                style={{ background: "#0F0F1A", color: "white" }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "#5D1E99")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "#0F0F1A")}
+                className="w-8 h-8 rounded-lg flex items-center justify-center transition-colors"
+                style={{ background: "rgba(255,255,255,0.12)", color: "white" }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.25)")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "rgba(255,255,255,0.12)")}
               >
                 <Icon />
               </a>
