@@ -759,16 +759,16 @@ export default function EvoqProjectsPage() {
               backgroundSize: "32px 32px",
             }} />
 
-            <div className="relative z-10 flex-1 flex flex-col justify-between p-10 lg:p-14">
-              <div className="flex-1">
+            <div className="relative z-10 flex flex-col items-center text-center justify-between p-10 lg:p-14">
+              <div>
                 <h2 className="text-3xl lg:text-4xl font-extrabold text-gray-900 leading-[1.2] mb-4">
                   Bring Planning, Execution, and<br />Team Coordination Together
                 </h2>
-                <p className="text-base leading-relaxed" style={{ color: "#6D4C9E" }}>
+                <p className="text-base leading-relaxed text-gray-900 max-w-2xl mx-auto">
                   Discover how EVOQ Projects helps organizations improve visibility, coordinate workflows, manage execution, and support teams operating across projects, operations, and business functions.
                 </p>
               </div>
-              <div className="flex items-center gap-3 mt-10">
+              <div className="flex items-center justify-center gap-3 mt-10">
                 <Button size="lg"
                   onClick={() => setShowDemo(true)}
                   className="font-bold text-sm px-7 py-3 rounded-xl text-white transition-all hover:scale-[1.02]"
@@ -781,22 +781,6 @@ export default function EvoqProjectsPage() {
                     See Pricing <ArrowRight className="w-4 h-4" />
                   </button>
                 </Link>
-              </div>
-            </div>
-
-            <div className="relative z-10 lg:w-[35%] flex-shrink-0 flex items-end justify-end overflow-hidden">
-              <div className="absolute bottom-0 right-0 w-56 h-56 rounded-full translate-x-1/4 translate-y-1/4" style={{ background: "#A78BFA", opacity: 0.35 }} />
-              <div className="absolute bottom-8 right-36 w-32 h-32 rounded-full" style={{ background: "#C4B5FD", opacity: 0.25 }} />
-              <div className="relative m-8 mt-0 lg:mt-8">
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 z-20 rounded-full px-4 py-1.5 text-xs font-bold text-white shadow-lg whitespace-nowrap" style={{ background: "#A78BFA" }}>
-                  EVOQ Projects
-                </div>
-                <img
-                  src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=640&q=85"
-                  alt="Team reviewing project dashboards"
-                  className="rounded-2xl shadow-2xl object-cover"
-                  style={{ width: 320, height: 260, objectPosition: "center" }}
-                />
               </div>
             </div>
           </div>
