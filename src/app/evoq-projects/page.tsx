@@ -190,39 +190,46 @@ export default function EvoqProjectsPage() {
 
           {/* Photos */}
           <div className="absolute" style={{ top: 130, left: "2%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&q=80"
+            <motion.img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=300&q=80"
               alt="Field engineer" className="object-cover rounded-3xl border-4 border-white shadow-xl"
-              style={{ width: 118, height: 155, objectPosition: "top" }} />
+              style={{ width: 118, height: 155, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} />
           </div>
           <div className="absolute" style={{ top: 90, left: "23%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80"
+            <motion.img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=300&q=80"
               alt="" className="object-cover rounded-3xl border-4 border-white shadow-xl"
-              style={{ width: 158, height: 208, objectPosition: "top" }} />
+              style={{ width: 158, height: 208, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} />
           </div>
           <div className="absolute" style={{ top: 128, left: "50%", transform: "translateX(-50%)", zIndex: 2 }}>
-            <img src="/images/hero/happy-engineer.jpg"
+            <motion.img src="/images/hero/happy-engineer.jpg"
               alt="Happy engineer" className="object-cover rounded-3xl border-4 border-white shadow-2xl"
-              style={{ width: 188, height: 228, objectPosition: "top" }} />
+              style={{ width: 188, height: 228, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.3 }} />
           </div>
           <div className="absolute" style={{ top: 90, right: "23%", zIndex: 2 }}>
-            <img src="/images/hero/business-admin.jpg"
+            <motion.img src="/images/hero/business-admin.jpg"
               alt="Business admin" className="object-cover rounded-3xl border-4 border-white shadow-xl"
-              style={{ width: 152, height: 200, objectPosition: "top" }} />
+              style={{ width: 152, height: 200, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }} />
           </div>
           <div className="absolute" style={{ top: 122, right: "3%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=280&q=80"
+            <motion.img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=280&q=80"
               alt="" className="object-cover rounded-3xl border-4 border-white shadow-xl"
-              style={{ width: 138, height: 175, objectPosition: "top" }} />
+              style={{ width: 138, height: 175, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.1 }} />
           </div>
           <div className="absolute" style={{ top: 265, left: "13%", zIndex: 2 }}>
-            <img src="/images/hero/professional-woman-laptop.jpg"
+            <motion.img src="/images/hero/professional-woman-laptop.jpg"
               alt="Professional woman with laptop" className="object-cover rounded-3xl border-4 border-white shadow-lg"
-              style={{ width: 126, height: 156, objectPosition: "top" }} />
+              style={{ width: 126, height: 156, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} />
           </div>
           <div className="absolute" style={{ top: 260, right: "13%", zIndex: 2 }}>
-            <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=260&q=80"
+            <motion.img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=260&q=80"
               alt="Manufacturing professional" className="object-cover rounded-3xl border-4 border-white shadow-lg"
-              style={{ width: 132, height: 160, objectPosition: "top" }} />
+              style={{ width: 132, height: 160, objectPosition: "top" }}
+              initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6, delay: 0.4 }} />
           </div>
 
           {/* Floating stat badges */}
@@ -356,7 +363,11 @@ export default function EvoqProjectsPage() {
             </div>
             <div className="relative">
               <div className="relative w-full rounded-2xl overflow-hidden shadow-xl" style={{ height: 420 }}>
-                <img src={teamWorkingOffice} alt="Team collaborating" className="w-full h-full object-cover" />
+                <motion.img src={teamWorkingOffice} alt="Team collaborating" className="w-full h-full object-cover"
+                  initial={{ opacity: 0, scale: 1.05 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true, amount: 0.3 }}
+                  transition={{ duration: 0.7 }} />
               </div>
             </div>
           </div>
@@ -463,11 +474,15 @@ export default function EvoqProjectsPage() {
 
                   {/* Right — image */}
                   <div className="lg:w-[44%] flex-shrink-0 relative overflow-hidden">
-                    <img
+                    <motion.img
                       src={ind.image}
                       alt={ind.name}
                       className="absolute bottom-0 left-0 right-0 w-full object-cover rounded-tl-2xl shadow-2xl"
                       style={{ top: "10%", height: "90%" }}
+                      initial={{ opacity: 0, scale: 1.08 }}
+                      whileInView={{ opacity: 1, scale: 1 }}
+                      viewport={{ once: true, amount: 0.3 }}
+                      transition={{ duration: 0.7 }}
                     />
                   </div>
                 </div>

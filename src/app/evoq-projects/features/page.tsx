@@ -44,7 +44,8 @@ export default function EvoqProjectsFeaturesPage() {
                   <LayoutGrid className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid rgba(167,139,250,0.15)" }}>
-                  <img src="/images/hero/professional-woman-laptop.jpg" alt="Professional woman with laptop" className="w-full h-full object-cover" />
+                  <motion.img src="/images/hero/professional-woman-laptop.jpg" alt="Professional woman with laptop" className="w-full h-full object-cover"
+                    initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.1 }} />
                 </div>
                 <div className="aspect-square rounded-2xl flex items-center justify-center shadow-sm" style={{ background: "#F5F3FF", border: "1px solid rgba(167,139,250,0.15)" }}>
                   <CheckCircle2 className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
@@ -56,10 +57,12 @@ export default function EvoqProjectsFeaturesPage() {
                   <MessageSquare className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid rgba(167,139,250,0.15)" }}>
-                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="" className="w-full h-full object-cover" />
+                  <motion.img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=faces" alt="" className="w-full h-full object-cover"
+                    initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.2 }} />
                 </div>
                 <div className="aspect-square rounded-2xl overflow-hidden shadow-sm" style={{ border: "1px solid rgba(167,139,250,0.15)" }}>
-                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces" alt="" className="w-full h-full object-cover" />
+                  <motion.img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop&crop=faces" alt="" className="w-full h-full object-cover"
+                    initial={{ opacity: 0, scale: 1.1 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.6, delay: 0.3 }} />
                 </div>
                 <div className="aspect-square rounded-2xl flex items-center justify-center shadow-sm" style={{ background: "#EDE9FE", border: "1px solid rgba(167,139,250,0.15)" }}>
                   <Bell className="w-10 h-10" style={{ color: "#7C3AED", strokeWidth: 1.5 }} />
