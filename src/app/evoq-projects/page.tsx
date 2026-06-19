@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import type { ElementType } from "react";
 
-const teamWorkingOffice = "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=800&q=80";
+const teamWorkingOffice = "/images/project-management.jpg";
 
 interface IndustryItem {
   name: string;
