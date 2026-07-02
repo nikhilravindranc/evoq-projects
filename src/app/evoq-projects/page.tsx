@@ -62,7 +62,7 @@ export default function EvoqProjectsPage() {
       description: "Manage organization-wide initiatives with timeline visibility, dependencies, approvals, resource coordination, and milestone tracking.",
       capabilities: ["Project Phases & Milestones", "Gantt Charts & Dependencies", "Resource Workload Planning", "Executive Reporting", "Approval Workflows"],
       icon: BarChart3,
-      image: "/images/Enterprise-PMOs.jpg",
+      image: "/images/Enterprise PMO dashboard.png",
       gradient: "linear-gradient(135deg, #BFDBFE 0%, #DBEAFE 100%)",   // Blue — pastel
     },
     {
@@ -98,7 +98,7 @@ export default function EvoqProjectsPage() {
       description: "Support operational coordination across administrative workflows, scheduling, approvals, recurring activities, and team communication.",
       capabilities: ["Workflow Visibility", "Scheduling Coordination", "Task & Activity Tracking", "Operational Reporting", "Team Collaboration"],
       icon: Calendar,
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=700&q=80",
+      image: "/images/Healthcare operations dashboard.png",
       gradient: "linear-gradient(135deg, #A7F3D0 0%, #D1FAE5 100%)",   // Emerald — pastel
     },
     {
@@ -116,7 +116,7 @@ export default function EvoqProjectsPage() {
       description: "Manage delivery timelines, client coordination, team workloads, recurring deliverables, and operational accountability across service teams.",
       capabilities: ["Delivery Planning", "Resource Coordination", "Timeline Management", "Team Collaboration", "Reporting & Visibility"],
       icon: Users,
-      image: "/images/Professional-Services.jpg",
+      image: "/images/Professional services dashboard.png",
       gradient: "linear-gradient(135deg, #FECDD3 0%, #FFE4E6 100%)",   // Rose — pastel
     },
   ];
