@@ -329,47 +329,36 @@ export default function EvoqProjectsPage() {
           backgroundSize: "28px 28px",
         }} />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="space-y-7">
-              <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
-                The Smarter Way to Keep<br />
-                Every Team on Track
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                Projects rarely fail because of effort. They fail when information is scattered,
-                priorities shift, and teams lose visibility. EVOQ Projects brings clarity and
-                structure to your operations, keeping every task, team, and timeline connected.
-              </p>
-              <div className="space-y-3">
-                <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What slows teams down</p>
-                {challenges.map((challenge, index) => (
-                  <div key={index} className="flex items-start gap-4 rounded-xl p-4"
-                    style={{ background: "linear-gradient(to right, #F5F3FF, #ffffff)", border: "1px solid #DDD6FE" }}>
-                    <div className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-black bg-white"
-                      style={{ color: "#7C3AED", border: "1.5px solid #C4B5FD" }}>
-                      {String(index + 1).padStart(2, "0")}
-                    </div>
-                    <div className="flex-1 pt-0.5">
-                      <p className="text-sm text-gray-700 leading-relaxed">{challenge}</p>
-                    </div>
-                    <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "#A78BFA" }} />
+          <div className="space-y-7">
+            <h2 className="h2 text-gray-900" style={{ fontFamily: '"Figtree", sans-serif', fontSize: "38px" }}>
+              The Smarter Way to Keep<br />
+              Every Team on Track
+            </h2>
+            <p className="text-lg text-gray-600 leading-relaxed">
+              Projects rarely fail because of effort. They fail when information is scattered,
+              priorities shift, and teams lose visibility. EVOQ Projects brings clarity and
+              structure to your operations, keeping every task, team, and timeline connected.
+            </p>
+            <div className="space-y-3">
+              <p className="text-xs font-bold uppercase tracking-widest text-gray-400 mb-4">What slows teams down</p>
+              {challenges.map((challenge, index) => (
+                <div key={index} className="flex items-start gap-4 rounded-xl p-4"
+                  style={{ background: "linear-gradient(to right, #F5F3FF, #ffffff)", border: "1px solid #DDD6FE" }}>
+                  <div className="flex-shrink-0 w-7 h-7 rounded-lg flex items-center justify-center text-xs font-black bg-white"
+                    style={{ color: "#7C3AED", border: "1.5px solid #C4B5FD" }}>
+                    {String(index + 1).padStart(2, "0")}
                   </div>
-                ))}
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                With EVOQ Projects, every plan, sprint, and update live in one shared workspace
-                that keeps your team aligned, responsive, and ready to deliver.
-              </p>
+                  <div className="flex-1 pt-0.5">
+                    <p className="text-sm text-gray-700 leading-relaxed">{challenge}</p>
+                  </div>
+                  <XCircle className="w-4 h-4 flex-shrink-0 mt-0.5" style={{ color: "#A78BFA" }} />
+                </div>
+              ))}
             </div>
-            <div className="relative">
-              <div className="relative w-full rounded-2xl overflow-hidden shadow-xl" style={{ height: 420 }}>
-                <motion.img src={teamWorkingOffice} alt="Team collaborating" className="w-full h-full object-cover"
-                  initial={{ opacity: 0, scale: 1.05 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  viewport={{ once: true, amount: 0.3 }}
-                  transition={{ duration: 0.7 }} />
-              </div>
-            </div>
+            <p className="text-gray-700 leading-relaxed">
+              With EVOQ Projects, every plan, sprint, and update live in one shared workspace
+              that keeps your team aligned, responsive, and ready to deliver.
+            </p>
           </div>
         </div>
       </section>
