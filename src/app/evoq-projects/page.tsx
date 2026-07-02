@@ -135,20 +135,20 @@ export default function EvoqProjectsPage() {
       transition={{ duration: 0.5 }}
     >
       <DemoModal open={showDemo} onClose={() => setShowDemo(false)} />
-      <Header dark />
-      <EvoqProjectsSubHeader dark />
+      <Header />
+      <EvoqProjectsSubHeader />
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden" style={{ background: "#7C3AED" }}>
+      <section className="relative overflow-hidden" style={{ background: "#F5F3FF" }}>
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[700px] rounded-full opacity-70"
-            style={{ background: "radial-gradient(ellipse, rgba(255,255,255,0.16) 0%, transparent 65%)" }} />
-          <div className="absolute top-0 left-0 w-[500px] h-[600px] rounded-full opacity-50"
-            style={{ background: "radial-gradient(ellipse, rgba(196,181,253,0.30) 0%, transparent 65%)" }} />
-          <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-45"
-            style={{ background: "radial-gradient(ellipse, rgba(255,255,255,0.14) 0%, transparent 65%)" }} />
-          <div className="absolute bottom-0 left-1/3 w-[600px] h-[400px] rounded-full opacity-40"
-            style={{ background: "radial-gradient(ellipse, rgba(93,30,153,0.35) 0%, transparent 65%)" }} />
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1100px] h-[700px] rounded-full opacity-60"
+            style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.18) 0%, transparent 65%)" }} />
+          <div className="absolute top-0 left-0 w-[500px] h-[600px] rounded-full opacity-40"
+            style={{ background: "radial-gradient(ellipse, rgba(167,139,250,0.22) 0%, transparent 65%)" }} />
+          <div className="absolute top-0 right-0 w-[500px] h-[500px] rounded-full opacity-35"
+            style={{ background: "radial-gradient(ellipse, rgba(139,92,246,0.18) 0%, transparent 65%)" }} />
+          <div className="absolute bottom-0 left-1/3 w-[600px] h-[400px] rounded-full opacity-30"
+            style={{ background: "radial-gradient(ellipse, rgba(167,139,250,0.15) 0%, transparent 65%)" }} />
         </div>
 
         <div className="relative w-full" style={{ height: 420 }}>
@@ -156,33 +156,33 @@ export default function EvoqProjectsPage() {
             viewBox="0 0 100 420" preserveAspectRatio="none" style={{ zIndex: 0 }}>
             <defs>
               <linearGradient id="cg" x1="0%" y1="0%" x2="100%" y2="0%">
-                <stop offset="0%"   stopColor="#FFFFFF" stopOpacity="0.7" />
-                <stop offset="50%"  stopColor="#DDD6FE" stopOpacity="0.75" />
-                <stop offset="100%" stopColor="#FFFFFF" stopOpacity="0.7" />
+                <stop offset="0%"   stopColor="#E56399" stopOpacity="0.6" />
+                <stop offset="50%"  stopColor="#7F96FF" stopOpacity="0.65" />
+                <stop offset="100%" stopColor="#E56399" stopOpacity="0.6" />
               </linearGradient>
             </defs>
             <path d="M 19,231 C 26,220 34,204 41,198 C 48,192 54,187 61,194 C 68,201 76,223 84,238"
               fill="none" stroke="url(#cg)" strokeWidth="1.5" strokeDasharray="7,6"
               strokeLinecap="round" vectorEffect="non-scaling-stroke" />
             <path d="M 25,348 Q 50,332 74,318"
-              fill="none" stroke="#FFFFFF" strokeWidth="1.5" strokeDasharray="7,6"
-              strokeLinecap="round" opacity="0.5" vectorEffect="non-scaling-stroke" />
+              fill="none" stroke="#7F96FF" strokeWidth="1.5" strokeDasharray="7,6"
+              strokeLinecap="round" opacity="0.55" vectorEffect="non-scaling-stroke" />
             <path d="M 14,388 Q 50,356 86,388"
-              fill="none" stroke="#DDD6FE" strokeWidth="1.5" strokeDasharray="8,7"
-              strokeLinecap="round" opacity="0.3" vectorEffect="non-scaling-stroke" />
+              fill="none" stroke="#E56399" strokeWidth="1.5" strokeDasharray="8,7"
+              strokeLinecap="round" opacity="0.22" vectorEffect="non-scaling-stroke" />
             <path d="M 8,413 Q 50,374 92,413"
-              fill="none" stroke="#FFFFFF" strokeWidth="1.5" strokeDasharray="8,7"
-              strokeLinecap="round" opacity="0.2" vectorEffect="non-scaling-stroke" />
+              fill="none" stroke="#7F96FF" strokeWidth="1.5" strokeDasharray="8,7"
+              strokeLinecap="round" opacity="0.15" vectorEffect="non-scaling-stroke" />
           </svg>
 
           {([
-            { left: "14%",  top: 128, size: 13, color: "#DDD6FE" },
-            { left: "37%",  top: 120, size: 11, color: "#DDD6FE" },
-            { left: "57%",  top: 142, size: 17, color: "#EDE9FE" },
-            { left: "71%",  top: 60,  size: 10, color: "#C4B5FD" },
-            { right: "4%",  top: 78,  size: 12, color: "#C4B5FD" },
-            { left: "8%",   top: 338, size: 10, color: "#C4B5FD" },
-            { right: "10%", top: 340, size: 11, color: "#DDD6FE" },
+            { left: "14%",  top: 128, size: 13, color: "#8B5CF6" },
+            { left: "37%",  top: 120, size: 11, color: "#8B5CF6" },
+            { left: "57%",  top: 142, size: 17, color: "#8B5CF6" },
+            { left: "71%",  top: 60,  size: 10, color: "#A78BFA" },
+            { right: "4%",  top: 78,  size: 12, color: "#A78BFA" },
+            { left: "8%",   top: 338, size: 10, color: "#A78BFA" },
+            { right: "10%", top: 340, size: 11, color: "#8B5CF6" },
           ] as const).map((s, i) => (
             <div key={i} className="absolute pointer-events-none select-none font-black leading-none"
               style={{ ...s, fontSize: s.size, zIndex: 3, lineHeight: 1 }}>✦</div>
@@ -282,37 +282,40 @@ export default function EvoqProjectsPage() {
 
           {/* Connector circles */}
           {([
-            { top: 215, left: "18%" },
-            { top: 182, left: "40%" },
-            { top: 178, left: "60%" },
-            { top: 222, left: "83%" },
-            { top: 332, left: "24%" },
-            { top: 302, left: "73%" },
-          ] as const).map((style, i) => (
-            <div key={i}
-              className="absolute w-8 h-8 rounded-full flex items-center justify-center font-bold shadow-lg select-none"
-              style={{ ...style, background: "#FFFFFF", color: "#7C3AED", fontSize: 18, zIndex: 3 }}>+</div>
-          ))}
+            { top: 215, left: "18%", bg: "#8B5CF6" },
+            { top: 182, left: "40%", bg: "#A78BFA" },
+            { top: 178, left: "60%", bg: "#8B5CF6" },
+            { top: 222, left: "83%", bg: "#A78BFA" },
+            { top: 332, left: "24%", bg: "#A78BFA" },
+            { top: 302, left: "73%", bg: "#8B5CF6" },
+          ] as const).map((pos, i) => {
+            const { bg, ...style } = pos;
+            return (
+              <div key={i}
+                className="absolute w-8 h-8 rounded-full flex items-center justify-center text-white font-bold shadow-lg select-none"
+                style={{ ...style, background: bg, fontSize: 18, zIndex: 3 }}>+</div>
+            );
+          })}
         </div>
 
         {/* Centered headline + CTA */}
         <div className="text-center px-4 pb-16 pt-2 relative z-10">
-          <p className="eyebrow mb-4" style={{ color: "#DDD6FE" }}>
+          <p className="eyebrow mb-4" style={{ color: "#7C3AED" }}>
             Work Management &amp; Operations Platform
           </p>
-          <h1 className="h1 text-white"
+          <h1 className="h1 text-gray-900"
             style={{ fontFamily: '"Figtree", sans-serif', fontSize: "48px" }}>
             Plan, Coordinate, and Execute<br />
             Work Across Teams
           </h1>
-          <p className="body-large mt-4 max-w-2xl mx-auto" style={{ fontFamily: '"DM Sans", sans-serif', color: "rgba(255,255,255,0.8)" }}>
+          <p className="body-large mt-4 text-gray-500 max-w-2xl mx-auto" style={{ fontFamily: '"DM Sans", sans-serif' }}>
             EVOQ Projects helps organizations manage projects, workflows, approvals, timelines, and operational execution with the flexibility to support Agile delivery, structured planning, and cross-functional coordination across industries.
           </p>
           <div className="mt-7 flex flex-wrap items-center justify-center gap-4">
             <Button size="lg"
               onClick={() => setShowDemo(true)}
-              className="font-bold text-sm px-7 py-3 rounded-xl shadow-lg transition-all hover:scale-[1.02]"
-              style={{ background: "#FFFFFF", color: "#7C3AED", boxShadow: "0 8px 24px rgba(0,0,0,0.18)" }}>
+              className="text-white font-bold text-sm px-7 py-3 rounded-xl shadow-lg transition-all hover:scale-[1.02]"
+              style={{ background: "#8B5CF6", boxShadow: "0 8px 24px rgba(139,92,246,0.35)" }}>
               Book a Demo <ArrowRight className="ml-2 w-4 h-4" />
             </Button>
           </div>
