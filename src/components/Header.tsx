@@ -14,10 +14,20 @@ const products = [
   { name: "EVOQ LMS",      href: "/evoq-lms",       desc: "Learning & development" },
 ];
 
-const Header = () => {
+const Header = ({ dark = false }: { dark?: boolean }) => {
   const [mobileOpen, setMobileOpen]     = useState(false);
   const [productsOpen, setProductsOpen] = useState(false);
   const dropdownRef                     = useRef<HTMLDivElement>(null);
+
+  // Color tokens that flip when the header sits on the dark (primary purple) hero
+  const headerBg   = dark ? "#7C3AED" : "#F5F3FF";
+  const logoColor  = dark ? "#FFFFFF" : "#0F0F1A";
+  const navBg      = dark ? "rgba(255,255,255,0.12)" : "#DDD6FE";
+  const navText    = dark ? "rgba(255,255,255,0.9)" : "#374151";
+  const navHoverBg = dark ? "rgba(255,255,255,0.18)" : "#F5F3FF";
+  const pillHover  = (e: React.MouseEvent<HTMLElement>, on: boolean) => {
+    e.currentTarget.style.background = on ? navHoverBg : "transparent";
+  };
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -30,28 +40,28 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="relative z-50" style={{ background: "#F5F3FF" }}>
+    <header className="relative z-50" style={{ background: headerBg }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-24">
 
           {/* ── Logo ── */}
           <Link href="/" className="flex items-center flex-shrink-0 select-none">
-            <span className="text-2xl font-black tracking-tight text-[#0F0F1A]" style={{ letterSpacing: "-0.03em" }}>
+            <span className="text-2xl font-black tracking-tight" style={{ letterSpacing: "-0.03em", color: logoColor }}>
               <span style={{ fontWeight: 900 }}>≡</span>VOQ
             </span>
           </Link>
 
           {/* ── Desktop nav ── */}
-          <nav className="hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5" style={{ background: "#DDD6FE" }}>
+          <nav className="hidden md:flex items-center gap-1 rounded-full px-1.5 py-1.5" style={{ background: navBg }}>
 
             {/* Products dropdown */}
             <div className="relative" ref={dropdownRef}>
               <button
                 onClick={() => setProductsOpen(!productsOpen)}
-                className="flex items-center gap-1.5 text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2"
-                style={{ background: "transparent" }}
-                onMouseEnter={(e) => { e.currentTarget.style.background = "#F5F3FF"; }}
-                onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+                className="flex items-center gap-1.5 text-sm font-medium transition-colors rounded-full px-4 py-2"
+                style={{ background: "transparent", color: navText }}
+                onMouseEnter={(e) => pillHover(e, true)}
+                onMouseLeave={(e) => pillHover(e, false)}
               >
                 Products
                 <ChevronDown
@@ -91,9 +101,10 @@ const Header = () => {
             {/* Why EVOQ? */}
             <Link
               href="/why-evoq"
-              className="text-sm font-medium text-gray-700 hover:text-[#0F0F1A] transition-colors rounded-full px-4 py-2"
-              onMouseEnter={(e) => { e.currentTarget.style.background = "#F5F3FF"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.background = "transparent"; }}
+              className="text-sm font-medium transition-colors rounded-full px-4 py-2"
+              style={{ color: navText }}
+              onMouseEnter={(e) => pillHover(e, true)}
+              onMouseLeave={(e) => pillHover(e, false)}
             >
               Why EVOQ?
             </Link>
@@ -103,18 +114,18 @@ const Header = () => {
           <div className="hidden md:flex items-center gap-3">
             <Button
               size="sm"
-              className="font-semibold text-white rounded-full pl-5 pr-1.5 py-1.5 h-auto flex items-center gap-2"
-              style={{ background: "#7C3AED" }}
+              className="font-semibold rounded-full pl-5 pr-1.5 py-1.5 h-auto flex items-center gap-2"
+              style={{ background: dark ? "#FFFFFF" : "#7C3AED", color: dark ? "#7C3AED" : "#FFFFFF" }}
             >
               Contact Us
-              <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: "rgba(255,255,255,0.2)" }}>
-                <ArrowRight className="w-4 h-4" style={{ color: "#FFFFFF" }} />
+              <span className="w-7 h-7 rounded-full flex items-center justify-center" style={{ background: dark ? "rgba(124,58,237,0.15)" : "rgba(255,255,255,0.2)" }}>
+                <ArrowRight className="w-4 h-4" style={{ color: dark ? "#7C3AED" : "#FFFFFF" }} />
               </span>
             </Button>
           </div>
 
           {/* ── Mobile toggle ── */}
-          <button className="md:hidden p-2 text-gray-600" onClick={() => setMobileOpen(!mobileOpen)}>
+          <button className="md:hidden p-2" style={{ color: dark ? "#FFFFFF" : "#4B5563" }} onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
