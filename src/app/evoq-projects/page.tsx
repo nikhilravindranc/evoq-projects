@@ -53,7 +53,7 @@ export default function EvoqProjectsPage() {
       description: "Support iterative development cycles, sprint execution, backlog management, and collaborative delivery workflows for software and product teams.",
       capabilities: ["Sprint Planning & Backlogs", "Kanban & List Views", "Epics & Work Items", "Team Discussions & Activity Tracking", "Velocity & Delivery Reporting"],
       icon: KanbanSquare,
-      image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=700&q=80",
+      image: "/images/software-technology-dashboard.png",
       gradient: "linear-gradient(135deg, #DDD6FE 0%, #EDE9FE 100%)",   // Brand purple — pastel
     },
     {
