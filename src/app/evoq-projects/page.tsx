@@ -71,7 +71,7 @@ export default function EvoqProjectsPage() {
       description: "Coordinate production-related activities, operational workflows, recurring processes, and team responsibilities with improved visibility across execution stages.",
       capabilities: ["Workflow Coordination", "Operational Task Tracking", "Approval Processes", "Team Accountability", "Timeline Visibility"],
       icon: Workflow,
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=80",
+      image: "/images/manufacturing-dashboard.png",
       gradient: "linear-gradient(135deg, #99F6E4 0%, #CCFBF1 100%)",   // Teal — pastel
     },
     {
@@ -80,7 +80,7 @@ export default function EvoqProjectsPage() {
       description: "Plan and manage engineering initiatives involving structured deliverables, technical coordination, execution stages, and deadline tracking.",
       capabilities: ["Milestone Tracking", "Dependency Management", "Structured Planning", "Team Coordination", "Progress Dashboards"],
       icon: GanttChart,
-      image: "https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&q=80",
+      image: "/images/Engineering-teams-dashboard.png",
       gradient: "linear-gradient(135deg, #C7D2FE 0%, #E0E7FF 100%)",   // Indigo — pastel
     },
     {
@@ -89,7 +89,7 @@ export default function EvoqProjectsPage() {
       description: "Coordinate execution phases, approvals, field activities, documentation, and schedule dependencies across operational teams.",
       capabilities: ["Phase-Based Planning", "Timeline Coordination", "Approval Tracking", "Documentation Management", "Team Communication"],
       icon: Layers,
-      image: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80",
+      image: "/images/Construction-field-ops.png",
       gradient: "linear-gradient(135deg, #FED7AA 0%, #FFEDD5 100%)",   // Orange — pastel
     },
     {
@@ -107,7 +107,7 @@ export default function EvoqProjectsPage() {
       description: "Coordinate movement, scheduling, approvals, operational dependencies, and delivery-related activities with greater execution visibility.",
       capabilities: ["Workflow Tracking", "Timeline Coordination", "Process Visibility", "Operational Reporting", "Cross-Team Coordination"],
       icon: RefreshCw,
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=700&q=80",
+      image: "/images/Logistics supply chain dashboard.png",
       gradient: "linear-gradient(135deg, #BAE6FD 0%, #E0F2FE 100%)",   // Sky — pastel
     },
     {
